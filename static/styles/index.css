@@ -1,0 +1,54 @@
+/* static/css/styles.css */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+.grid {
+    display: grid;
+    grid-gap: 85px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.product {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+.product img {
+    width: 100%; /* make the image responsive to the container width */
+    height: 200px; /* set a fixed height for your images */
+    object-fit: contain; /* make sure the whole image fits within the box */
+    background-color: #fff; /* in case images are transparent, they'll have a white background */
+    border-bottom: 1px solid #ddd; /* adds a subtle line below the image */
+    padding-bottom: 10px; /* adds some space below the image */
+    margin-bottom: 15px; /* adds some space between the image and the text below */
+}
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+.product p {
+    color: #555;
+}
+.product a {
+    text-decoration: none;
+    color: #0a5;
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

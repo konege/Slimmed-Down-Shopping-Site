@@ -1,0 +1,102 @@
+/* product.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.breadcrumbs {
+    padding: 10px 20px;
+    background-color: #e1e1e1;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.product-container {
+    border: 2px solid black; /* Adds a black border around the product */
+    margin: 0 auto; /* Centers the product container on the page */
+    max-width: 600px; /* Adjust the width as necessary */
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    display: flex;
+    flex-direction: row; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically in the container */
+    background: #fff;
+}
+
+.product-image img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-details h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.specs {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.back-to-list {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.back-to-list:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch items to fill the container */
+    }
+
+    .product-image img {
+        max-width: 100%; /* Full width of the container */
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between the image and details */
+    }
+
+    .product-details {
+        text-align: center; /* Center-align the details */
+    }
+}

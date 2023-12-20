@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICINITY BY KONEGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/product.css') }}">
+</head>
+<body>
+    <nav class="breadcrumbs">
+        <a href="{{ url_for('index') }}">Home</a> &gt;
+        <a href="{{ url_for('search', query=product.category) }}">{{ product.category }}</a> &gt;
+        <span>{{ product.description }}</span>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="{{ url_for('static', filename='img/' + product.image) }}" alt="{{ product.description }}">
+        </div>
+        <div class="product-details">
+            <h1>{{ product.name }}</h1>
+            <p class="description">{{ product.description }}</p>
+            <p class="specs">Price: {{ product.price }} €</p>
+            <p class="specs">Category: {{ product.category }}</p>
+            <p class="specs">Product Number: {{ product.product_no }}</p>
+        </div>
+    </div>
+    <a href="{{ url_for('index') }}" class="back-to-list">Back to Home</a>
+</body>
+</html>

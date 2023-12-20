@@ -1,0 +1,59 @@
+/* styles/search.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    text-align: center; /* Center-align the container's content */
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid black; /* Black border for the frame */
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product a {
+    text-decoration: none;
+    color: #0a5;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+@media (max-width: 600px) {
+    .grid {
+        display: grid; /* Switch to grid layout on smaller screens */
+        grid-template-columns: 1fr; /* One column grid for small screens */
+        justify-items: center; /* Center the items in the grid */
+    }
+}
