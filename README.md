@@ -29,4 +29,4 @@ In this project, I used SQLite for the database. The primary model is the `Produ
 
 ## Deployment
 - I successfully deployed the web app on Azure Web Services, focusing on setting up the required configurations and environment variables to ensure smooth operation and compatibility with the Azure hosting environment.
-- Code deployed at: [https://shoppingsitekonege.azurewebsites.net](https://shoppingsitekonege.azurewebsites.net)
+- Code deployed at: [https://shoppingsitekonege.azurewebsites.net](https://shoppingsitekonege.azurewebsites.net)  (The site takes some time to open. I do not know why.)
